@@ -35,13 +35,6 @@ app.use(session({
   store: new MongoStore({ url: 'mongodb+srv://meethabaap0:dharmesh123@cluster0.0b7auxy.mongodb.net/resume-builder' })
 }));
 
-app.use (cors (
-  {
-  origin: (inttps://resume-builderwhq.vercel.app"],
-  methods: ["POST", "GET" ], 
-  credentials: true
-  }
-));
 app.use(express.json))
 
 app.use(express.json());
