@@ -1,0 +1,10 @@
+<!-- views/select-resume-to-download.ejs -->
+
+<h1>Select Resume to Download</h1>
+<ul>
+    <% resumes.forEach(resume => { %>
+        <li>
+            <a href="/resume/download/<%= resume._id %>"><%= resume.resumeName %></a>
+        </li>
+    <% }); %>
+</ul>

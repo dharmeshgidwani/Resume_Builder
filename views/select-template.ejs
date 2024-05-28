@@ -1,0 +1,26 @@
+<!-- select-template.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Template</title>
+    <!-- Add any necessary stylesheets or scripts -->
+</head>
+<body>
+    <h1>Edit Template</h1>
+    <h2><%= template.name %></h2>
+    <img src="<%= template.imageUrl %>" alt="<%= template.name %>">
+    <form action="/create-resume" method="POST">
+        <!-- Include any necessary form fields here -->
+        <!-- For example, you can include input fields for user details -->
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <!-- Add more form fields as needed -->
+        <button type="submit">Save Resume</button>
+    </form>
+</body>
+</html>

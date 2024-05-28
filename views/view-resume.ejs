@@ -1,0 +1,10 @@
+<!-- views/view-resume-list.ejs -->
+
+<h1>Your Resumes</h1>
+<ul>
+    <% resumes.forEach(resume => { %>
+        <li>
+            <a href="/view-resume/<%= resume._id %>"><%= resume.name %></a>
+        </li>
+    <% }); %>
+</ul>

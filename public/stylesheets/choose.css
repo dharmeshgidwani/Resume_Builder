@@ -1,0 +1,41 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #EFF2F9;
+    color: #1e2532;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    color: #1e2532;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 50px auto;
+    max-width: 300px;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #1A91F0;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #1170CD;
+}

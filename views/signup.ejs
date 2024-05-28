@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="../stylesheets/signup.css">
+</head>
+<body>
+    <h1>Signup</h1>
+    <form action="/signup" method="POST" enctype="application/x-www-form-urlencoded">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+        
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        
+        <label for="profilePhoto">Profile Photo:</label>
+        <input type="file" id="profilePhoto" name="profilePhoto" accept="image/*">
+
+        <label for="agreeTerms">
+            <input type="checkbox" id="agreeTerms" name="agreeTerms" required> I agree to the terms and conditions
+        </label>
+        
+        <label for="receiveNewsletter">
+            <input type="checkbox" id="receiveNewsletter" name="receiveNewsletter"> I want to receive the newsletter
+        </label>
+        
+        <button type="submit">Sign Up</button>
+    </form>
+    <p>Already have an account? <a href="/login">Login</a></p>
+</body>
+</html>

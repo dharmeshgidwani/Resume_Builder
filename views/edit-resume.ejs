@@ -1,0 +1,10 @@
+<!-- views/edit-resume-list.ejs -->
+
+<h1>Edit Your Resumes</h1>
+<ul>
+    <% resumes.forEach(resume => { %>
+        <li>
+            <a href="/edit-resume/<%= resume._id %>"><%= resume.resumeName %></a>
+        </li>
+    <% }); %>
+</ul>

@@ -1,0 +1,24 @@
+<!-- choose-template.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Template</title>
+    <!-- Add any necessary stylesheets or scripts -->
+</head>
+<body>
+    <h1>Choose a Template</h1>
+    <ul>
+        <% templates.forEach(template => { %>
+            <li>
+                <a href="/edit-template/<%= template._id %>">
+                    <h2><%= template.name %></h2>
+                    <!-- <img src="<%= template.imageUrl %>" alt="<%= template.name %>"> -->
+                </a>
+            </li>
+        <% }); %>
+    </ul>
+</body>
+</html>

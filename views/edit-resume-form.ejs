@@ -1,0 +1,9 @@
+<!-- views/edit-resume-form.ejs -->
+
+<h1>Edit Resume</h1>
+<form action="/edit-resume/<%= resume._id %>" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" value="<%= resume.name %>"><br>
+    <!-- Add fields for other resume details here -->
+    <button type="submit">Save Changes</button>
+</form>

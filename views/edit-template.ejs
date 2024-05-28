@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Engineer Resume</title>
+    <link rel="stylesheet" href="../stylesheets/edit-template.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Software Engineer Resume</h1>
+        <form action="/edit-template/<%= template._id %>/update" method="POST">
+            <div class="form-group">
+                <label for="ResumeName">Resume Name:</label>
+                <input type="text" id="ame" name="ResumeName" required>
+            </div>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone No.:</label>
+                <input type="number" id="phone" name="phone" pattern="[0-9]{10}" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="qualifications">Qualifications:</label>
+                <textarea id="qualifications" name="qualifications" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="education">Education:</label>
+                <input type="text" id="graduation" name="graduation" placeholder="Graduation" required>
+                <input type="text" id="postgrad" name="postgrad" placeholder="Post Graduation">
+                <input type="text" id="tenth" name="tenth" placeholder="10th Grade" required>
+                <input type="text" id="twelfth" name="twelfth" placeholder="12th Grade" required>
+            </div>
+            <div class="form-group">
+                <label for="technical">Technical Knowledge:</label>
+                <textarea id="technical" name="technical" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="hobbies">Hobbies:</label>
+                <textarea id="hobbies" name="hobbies" rows="4"></textarea>
+            </div>
+            <!-- Additional Fields as per profession -->
+            <div class="form-group">
+                <label for="experience">Experience:</label>
+                <textarea id="experience" name="experience" rows="4"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="projects">Projects:</label>
+                <textarea id="projects" name="projects" rows="4"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

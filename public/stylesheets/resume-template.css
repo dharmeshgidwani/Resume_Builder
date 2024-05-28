@@ -1,0 +1,45 @@
+/* resume-template.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.resume {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.header p {
+    margin: 5px 0;
+}
+
+.summary h2,
+.experience h2,
+.education h2 {
+    margin-top: 20px;
+}
+
+.job h3,
+.degree h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+ul {
+    padding: 0;
+    margin: 5px 0;
+}
+
+li {
+    list-style-type: disc;
+    margin-left: 20px;
+}
